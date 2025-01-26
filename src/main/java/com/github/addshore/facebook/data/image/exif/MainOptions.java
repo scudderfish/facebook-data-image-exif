@@ -2,29 +2,29 @@ package com.github.addshore.facebook.data.image.exif;
 
 public class MainOptions {
 
-    private final Boolean debug;
-    private final Boolean dry;
-    private final Boolean overwriteOriginals;
+    private final boolean debug;
+    private final boolean dry;
+    private final boolean overwriteOriginals;
 
     public MainOptions(
-            Boolean debug,
-            Boolean dry,
-            Boolean overwriteOriginals
+            boolean debug,
+            boolean dry,
+            boolean overwriteOriginals
     ) {
         this.debug = debug;
         this.dry = dry;
         this.overwriteOriginals = overwriteOriginals;
     }
 
-    public Boolean isDryMode() {
+    public boolean isDryMode() {
         return dry;
     }
 
-    public Boolean isDebugMode() {
+    public boolean isDebugMode() {
         return debug;
     }
 
-    public Boolean shouldOverwriteOriginals() {
+    public boolean shouldOverwriteOriginals() {
         return overwriteOriginals;
     }
 
